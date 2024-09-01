@@ -1,24 +1,24 @@
 package Assignment2;
 import java.util.Scanner;
 
-public class Calculator {
+public class overloding {
     private double number1;
     private double number2;
 
    
-    public Calculator() {
+    public overloding() {
         this.number1 = 0;
         this.number2 = 0;
     }
 
    
-    public Calculator(double number1) {
+    public overloding(double number1) {
         this.number1 = number1;
         this.number2 = 0;
     }
 
     
-    public Calculator(double number1, double number2) {
+    public overloding(double number1, double number2) {
         this.number1 = number1;
         this.number2 = number2;
     }
@@ -42,13 +42,13 @@ public class Calculator {
         double num1 = scanner.nextDouble();
         System.out.print("Enter second number for calc1: ");
         double num2 = scanner.nextDouble();
-        Calculator calc1 = new Calculator(num1, num2);
+        overloding calc1 = new overloding(num1, num2);
 
         System.out.print("Enter a number for calc2 (only one number): ");
         double num3 = scanner.nextDouble();
-        Calculator calc2 = new Calculator(num3);
+        overloding calc2 = new overloding(num3);
 
-        Calculator calc3 = new Calculator(); 
+        overloding calc3 = new overloding(); 
 
         System.out.println("\ncalc1 add (two parameters): " + calc1.add());
         System.out.println("calc2 add (one parameter, second is default): " + calc2.add());
